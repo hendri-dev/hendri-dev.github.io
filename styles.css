@@ -1,13 +1,17 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Titillium Web';
 }
 
 /* For Navbar */
 nav{
-background: rgba(0,0,0,.1);
-backdrop-filter: blur(50px);
-/* justify-content: space-between; */
-/* box-sh adow: 0 20px 30px rgba(201, 199, 199, 0.15); */
+  background: rgba(0,0,0,.1);
+  backdrop-filter: blur(50px);
+  width: 40%;
+  z-index: 999;
+	/* top: 8px; */
+  left: calc((100% - 40%) / 2);
+  font-size: 15px;
+  height: 40px;
 }
 
 a.nav-link {
@@ -17,11 +21,21 @@ a.nav-link {
 }
 
 #active {
-color:#757474;
-font-weight: 700;
+  color:#06989f;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 90%;
+    left: calc((100% - 90%) / 2);
+    }
+
+  .nav {
+      margin-top: -8px;
+  }
 }
 /* For Navbar */
-
 
 .jumbotron {
   padding-top: 6rem;
@@ -30,25 +44,25 @@ font-weight: 700;
 
 /* For text HENDRI */
 .txt h4 {
-color: #fff;
-font-size: 3em;
-font-weight:900;
-position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight:900;
+  position: absolute;
+  font-family: 'Titillium Web';
 }
 
 .txt h4:nth-child(1) {
-color: transparent;
--webkit-text-stroke: 2px #59696e;
+  color: transparent;
+  -webkit-text-stroke: 2px #59696e;
 }
 
 .txt h4:nth-child(2) {
-color: #59696e;
-animation: animate 4s ease-in-out infinite;
+  color: #59696e;
+  animation: animate 4s ease-in-out infinite;
 }
 
 @keyframes animate {
-0%,
-100% {
+0%, 100% {
   clip-path: polygon(
     0% 45%,
     16% 44%,
@@ -79,11 +93,20 @@ animation: animate 4s ease-in-out infinite;
 /* For text HENDRI */
 
 section {
-padding-top: 5rem;
+  padding-top: 5rem;
+  font-family: 'Titillium Web';
+}
+
+section h4{
+  color:#59696e;
 }
 
 #experience {
   background-color: #D0ECE7 ;
+}
+
+.port {
+  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
 }
 
 
